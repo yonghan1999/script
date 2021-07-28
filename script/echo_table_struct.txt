@@ -6,7 +6,7 @@ lxml==4.6.2
 matplotlib==3.3.2
 mysqlclient==2.0.3
 numpy==1.19.2
-opencv-contrib-python==4.4.0.44
+opencv-contrib-python==4.4.0.46
 Pillow==7.2.0
 pure-python-adb==0.3.0.dev0
 pyparsing==2.4.7
