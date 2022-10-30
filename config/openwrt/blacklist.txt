@@ -60,3 +60,4 @@ pximg.net
 pixiv.org
 pixiv.net
 360yield.com
+google.com.tw
