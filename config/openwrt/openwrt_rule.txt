@@ -1,0 +1,27 @@
+# Common port
+- DST-PORT,22,DIRECT
+
+
+## Steam server
+## - DOMAIN-KEYWORD,steam,DIRECT
+- DOMAIN-SUFFIX,steam-chat.com,DIRECT
+- DOMAIN-SUFFIX,steamcommunity.com,DIRECT
+- DOMAIN-SUFFIX,steampowered.com,DIRECT
+- DOMAIN-SUFFIX,steamgames.com,DIRECT
+- DOMAIN-SUFFIX,steamstat.us,DIRECT
+- DOMAIN-SUFFIX,steamstatic.com,DIRECT
+- DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+- DOMAIN-SUFFIX,steamserver.net,DIRECT
+- DOMAIN-SUFFIX,steambroadcast.akamaized.net,DIRECT
+- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,steamstore-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,steamvideo-a.akamaihd.net,DIRECT
+- DOMAIN-SUFFIX,playartifact.com,DIRECT
+- DOMAIN-SUFFIX,s.team,DIRECT
+- DOMAIN-SUFFIX,steam-api.com,DIRECT
+- DOMAIN-SUFFIX,steamdeck.com,DIRECT
+- DOMAIN-SUFFIX,valvesoftware.com,DIRECT
+- DOMAIN-SUFFIX,valve.net,DIRECT
