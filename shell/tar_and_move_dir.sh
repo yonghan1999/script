@@ -6,6 +6,9 @@ SOURCE_DIR="/www/backup/database"
 # 目标目录
 TARGET_DIR="/mnt/backup/quark/desktop/database"
 
+# 删除旧文件的天数（可以根据需求修改，默认30）
+DAYS_TO_KEEP=30
+
 # 日志文件
 #LOG_FILE="/var/log/backup_and_move.log"
 
@@ -36,11 +39,11 @@ else
     exit 1
 fi
 
-# 删除目标目录中 3 天之前的压缩包
-find "$TARGET_DIR" -type f -name "*.tar.gz" -mtime +3 -exec rm -f {} \;
+# 删除目标目录中 DAYS_TO_KEEP 天之前的压缩包
+find "$TARGET_DIR" -type f -name "*.tar.gz" -mtime +$DAYS_TO_KEEP -exec rm -f {} \;
 if [ $? -eq 0 ]; then
-#    echo "$(date +'%Y-%m-%d %H:%M:%S') - Deleted archives older than 3 days from $TARGET_DIR" >> "$LOG_FILE"
-     echo "$(date +'%Y-%m-%d %H:%M:%S') - Deleted archives older than 3 days from $TARGET_DIR"
+#    echo "$(date +'%Y-%m-%d %H:%M:%S') - Deleted archives older than $DAYS_TO_KEEP days from $TARGET_DIR" >> "$LOG_FILE"
+     echo "$(date +'%Y-%m-%d %H:%M:%S') - Deleted archives older than $DAYS_TO_KEEP days from $TARGET_DIR"
 else
 #    echo "$(date +'%Y-%m-%d %H:%M:%S') - Failed to delete old archives from $TARGET_DIR" >> "$LOG_FILE"
      echo "$(date +'%Y-%m-%d %H:%M:%S') - Failed to delete old archives from $TARGET_DIR"
